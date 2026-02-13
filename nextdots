@@ -23,6 +23,8 @@ elif [ "$1" == "changeshelltheme" ]; then
     exit 2
   fi
   nextdots.changeshelltheme $2
+elif [ "$1" == "update" ]
+  nextdots.updatedots
 else
   echo "$0: No arguments passed."
   echo "Use '$0 help' for help"
