@@ -7,7 +7,7 @@ echo "preparing for installation"
 rm ~/.config/hypr -r # to prevemt hyprland from blocking stow
 
 echo "installing dotfiles"
-stow alacritty bash fastfetch gtk hypridle hyprland hyprlock icons kitty neovim quickshell rofi wal waybar zsh --adopt
+stow alacritty bash fastfetch gtk hypridle hyprland hyprlock icons kitty neovim quickshell rofi wal waybar zsh vim --adopt
 hyprctl reload
 
 echo "installing oh-my-zsh and plugins"
