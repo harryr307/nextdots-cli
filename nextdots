@@ -25,8 +25,14 @@ elif [ "$1" == "changeshelltheme" ]; then
   nextdots.changeshelltheme $2
 elif [ "$1" == "update" ]
   nextdots.updatedots
+elif [ "$1" == "changeeditor" ]; then
+  if [ "$#" -lt 2 ]; then
+    echo "not enough arguments provided; usage: $0 $1 [EDITOR]"
+    exit 2
+  fi
+  nextdots.changeeditor $2
 else
-  echo "$0: No arguments passed."
+  echo "$0: Command not found"
   echo "Use '$0 help' for help"
   exit 1
 fi
