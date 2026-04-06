@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sed -i s/$EDITOR/$1/ ~/dotfiles/zsh/.zshrc.d/exports.sh="$1"
