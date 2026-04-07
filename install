@@ -1,6 +1,6 @@
 #/bin/bash
 
-PATHS="./nextdots ./nextdots.changeshelltheme ./nextdots.installdots"
+PATHS="./nextdots ./nextdots.changeshelltheme nextdots.changeeditor ./nextdots.installdots"
 
 if [[ -v DESTDIR ]]; then
   echo "$0: DESTDIR is set; skipping setting DESTDIR"

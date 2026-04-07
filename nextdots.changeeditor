@@ -1,3 +1,6 @@
 #!/bin/sh
 
-sed -i s/$EDITOR/$1/ ~/dotfiles/zsh/.zshrc.d/exports.sh="$1"
+sed -i s/$EDITOR/$1/ ~/dotfiles/zsh/.zshrc.d/exports.sh
+
+echo "Editor changed.
+Now, please restart zsh with the zr command"
